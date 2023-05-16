@@ -1,0 +1,128 @@
+body{
+    font-family: 'Poppins', sans-serif;
+    max-width: 1280px;
+    margin: 0 auto;
+    background-color: #f7f5b2;
+    color: #000000;
+}
+
+body.modo-escuro{
+    background-color: #240000;
+    color: hwb(41 47% 33%);
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 25px;
+}
+
+header .logo {
+    width: 200px;
+    transition: 0.2s ease-in-out;
+}
+
+header .imagem-botao{
+    width: 130px;
+    transition: 0.2s ease-in-out;
+}
+
+header #botao-alterar-tema{
+    background: none;
+    border: none;
+}
+
+header .logo:hover,
+header .imagem-botao:hover,
+main .cartao-musica:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+main{
+    padding: 25px;
+}
+
+main .listagem-taylor{
+    display: flex;
+    flex-wrap: wrap;
+    gap:30px;
+    justify-content: center;
+}
+
+main .cartao-musica{
+    background-color: #b1820259;
+    width: 250px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    border-radius: 10px;
+    transition: 0.2s ease-in-out;
+    
+}
+
+main .cartao-musica:hover {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.modo-escuro .cartao-musica{
+    background-color: #aa000028;
+}
+
+main .cartao-musica .informacoes{
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    border: 1px solid #000000;
+    border-radius: 10px;
+}
+
+main .cartao-musica .informacoes span{
+    padding: 5px;
+    text-align: center;
+    font-size: 14px;
+    width: 200px;
+}
+
+main .cartao-musica .img{
+    width: 200px;
+    height: 200px;
+}
+
+main .cartao-musica .tipos{
+    display: flex;
+    gap: 15px;
+}
+
+main .cartao-musica .tipo{
+   padding: 8px; 
+   border-radius: 15px;
+}
+
+.link-botao {
+    text-decoration: none;
+    border-radius: 3px;
+    width: 130px;
+    text-align: center;
+    padding: 3px;
+    font-family: 'Poppins';
+    font-size: 15px;
+    background-color: #a8740381;
+    color: #000000;
+}
+
+.modo-escuro .link-botao {
+    background-color: #0c00009a;
+    color: #a19090;
+}
+
+
+main .descricao{
+    max-height: 80px;
+    overflow-y: scroll;
+    font-size: 14px;
+    padding-right: 10px;
+}
